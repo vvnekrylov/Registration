@@ -12,7 +12,7 @@
                 <h1>Добро пожаловать!</h1>          
                     <p>Чтобы получить возможность познакомиться с охотхозяйствами, забронировать охотничий тур или купить/продать что-нибудь для
               охоты, необходимо <em><b>зарегистрироваться!</b></em></p>   
-                <form method="POST" action="form.php" enctype="text/plain">
+                <form method="post" action="form.php">
                     <fieldset>
                         <legend><i>Введите данные</i></legend>
                     <!--<p>
@@ -21,14 +21,14 @@
                     </p>-->
                     <p>
                         <label for="email">Логин (Email):</label><br>
-                        <input type="text" required name="login" id="email" placeholder="user@mail.com" size="35"/>
+                        <input type="email" required name="login" id="email" placeholder="user@mail.com" size="35px"/>
                     </p>
                     <p>
                         <label for="pass">Пароль:</label><br>
-                        <input type="password" required name="password" id="pass" placeholder="Введите пароль" size="35"/>
+                        <input type="password" required name="password" id="pass" placeholder="Введите пароль" size="35px"/>
                     </p>
                     <p>
-                        <input class="checkbox" type="checkbox" name="aggr"> Я даю свое согласие на обработку персональных данных
+                        <input class="checkbox" type="checkbox" name="aggr" size="10px"> Я даю свое согласие на обработку персональных данных
                          и согласен с <a  href="http://hunting4all.ru/web/uploads/docs/hunting4all_%20useagreement.pdf" target="_blank">Политикой конфиденциальности</a></p>
                     <p>   
                        <button type="submit">Зарегистрироваться!</button>
