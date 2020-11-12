@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+       <link href="style.css" rel="stylesheet">
+        <title>Страница аутентификации к сайту hunting4all.ru</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="container">
+                <h1>Добро пожаловать!</h1>          
+                    <p>Чтобы получить возможность познакомиться с охотхозяйствами, забронировать охотничий тур или купить/продать что-нибудь для
+              охоты, необходимо <em><b>зарегистрироваться!</b></em></p>   
+                <form method="POST" action="form.php" enctype="text/plain">
+                    <fieldset>
+                        <legend><i>Введите данные</i></legend>
+                    <!--<p>
+                        <label for="userName">Ваше имя:</label>
+                        <input type="text" autofocus required name="userName" id="userName "placeholder="Введите Ваше имя" size="35"/>
+                    </p>-->
+                    <p>
+                        <label for="email">Логин (Email):</label><br>
+                        <input type="text" required name="login" id="email" placeholder="user@mail.com" size="35"/>
+                    </p>
+                    <p>
+                        <label for="pass">Пароль:</label><br>
+                        <input type="password" required name="password" id="pass" placeholder="Введите пароль" size="35"/>
+                    </p>
+                    <p>
+                        <input class="checkbox" type="checkbox" name="aggr"> Я даю свое согласие на обработку персональных данных
+                         и согласен с <a  href="http://hunting4all.ru/web/uploads/docs/hunting4all_%20useagreement.pdf" target="_blank">Политикой конфиденциальности</a></p>
+                    <p>   
+                       <button type="submit">Зарегистрироваться!</button>
+                       <button class="reset" type="reset">Отмена</button>
+                    </p>
+                    </fieldset>
+                </form>    
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
